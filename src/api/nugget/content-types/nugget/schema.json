@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "nuggets",
+  "info": {
+    "singularName": "nugget",
+    "pluralName": "nuggets",
+    "displayName": "nugget",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string",
+      "required": true
+    },
+    "URL": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "Source": {
+      "type": "enumeration",
+      "enum": [
+        "Blog",
+        "Instagram",
+        "Tiktok",
+        "Twitter",
+        "Youtube"
+      ],
+      "required": true
+    },
+    "Category": {
+      "type": "enumeration",
+      "enum": [
+        "Art",
+        "Design",
+        "Lifestyle",
+        "Software Development"
+      ],
+      "required": true
+    },
+    "Date": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
